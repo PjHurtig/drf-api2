@@ -68,6 +68,7 @@ DEBUG = 'DEV' in os.environ
 ALLOWED_HOSTS = [
     '8000-pjhurtig-drf-api2-70tbx07q9g.us2.codeanyapp.com',
     'drf-api-pj-37c36d0c899c.herokuapp.com',
+    '3000-pjhurtig-moments-6oy10z79g0.us2.codeanyapp.com/',
 ]
 
 
@@ -99,7 +100,9 @@ INSTALLED_APPS = [
     'likes',
     'followers',
 ]
+
 SITE_ID = 1
+
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
