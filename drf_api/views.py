@@ -1,6 +1,6 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .settings import(
+from .settings import (
     JWT_AUTH_COOKIE, JWT_AUTH_REFRESH_COOKIE, JWT_AUTH_SAMESITE,
     JWT_AUTH_SECURE,
 )
@@ -9,10 +9,11 @@ from .settings import(
 @api_view()
 def root_route(request):
     return Response({
-        "message": "welcome to my drf API"
+        "message": "Welcome to my drf API!"
     })
 
 
+# dj-rest-auth logout view fix
 @api_view(['POST'])
 def logout_route(request):
     response = Response()
