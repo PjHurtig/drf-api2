@@ -117,6 +117,7 @@ if 'CLIENT_ORIGIN_DEV' in os.environ:
 
     CORS_ALLOWED_ORIGIN_REGEXES = [
         rf"{extracted_url}.(eu|us)\d+\.codeanyapp\.com$",
+        "https://moments-pj-520cef3ec6cb.herokuapp.com",
     ]
 
 CORS_ALLOW_CREDENTIALS = True
